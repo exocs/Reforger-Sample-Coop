@@ -1,0 +1,12 @@
+SCR_FactionManager : "{3794016E5AEC2478}Prefabs/MP/Managers/Factions/CoopFactionManager_Base.et" {
+ ID "56B2B4776E6E4499"
+ Factions {
+  SCR_CampaignFaction "{5966E56E6680A49C}" : "{ADFDBDA163950168}Configs/Factions/US_Campaign.conf" {
+  }
+  SCR_CampaignFaction "{5966E56E67344613}" : "{15B582F8FA0B0940}Configs/Factions/USSR_Campaign.conf" {
+   m_bIsPlayable 0
+  }
+  SCR_CampaignFaction "{5966E56E65B2B1DA}" : "{CF9447B87AB774DB}Configs/Factions/FIA_Campaign.conf" {
+  }
+ }
+}

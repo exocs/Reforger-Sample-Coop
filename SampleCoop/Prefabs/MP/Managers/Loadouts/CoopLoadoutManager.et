@@ -1,0 +1,25 @@
+SCR_LoadoutManager : "{F9CAA9AD4CA12BC8}Prefabs/MP/Managers/Loadouts/CoopLoadoutManager_Base.et" {
+ ID "56B2B47708C4F23A"
+ m_aPlayerLoadouts {
+  SCR_FactionPlayerLoadout "{5966E56D89B8567C}" : "{7C7C65FD583E6612}Configs/Loadouts/US/Loadout_US_Rifleman.conf" {
+  }
+  SCR_FactionPlayerLoadout "{5966E56D8E646056}" : "{AFA36BB8828E381A}Configs/Loadouts/US/Loadout_US_MG.conf" {
+  }
+  SCR_FactionPlayerLoadout "{5966E56D8F1B19FD}" : "{121FC1ABB7FE098C}Configs/Loadouts/US/Loadout_US_LAT.conf" {
+  }
+  SCR_FactionPlayerLoadout "{5966E56D8C512CBF}" : "{0B4549C656AFC7AE}Configs/Loadouts/US/Loadout_US_GL.conf" {
+  }
+  SCR_FactionPlayerLoadout "{5966E56D8D8526A7}" : "{0EFB9B7C7EF8B247}Configs/Loadouts/US/Loadout_US_Sniper.conf" {
+  }
+  SCR_FactionPlayerLoadout "{5966E56D80C4EB97}" : "{5F9034642E99437D}Configs/Loadouts/USSR/Loadout_USSR_Rifleman.conf" {
+  }
+  SCR_FactionPlayerLoadout "{5966E56D81AD5410}" : "{E97C426E941D8FDC}Configs/Loadouts/USSR/Loadout_USSR_MG.conf" {
+  }
+  SCR_FactionPlayerLoadout "{5966E56D863781C7}" : "{C1C1DB68C6FC265B}Configs/Loadouts/USSR/Loadout_USSR_AT.conf" {
+  }
+  SCR_FactionPlayerLoadout "{5966E56D8759FAF4}" : "{A62BF2390565DC0B}Configs/Loadouts/USSR/Loadout_USSR_GL.conf" {
+  }
+  SCR_FactionPlayerLoadout "{5966E56D849C84E8}" : "{FB56BAF9A1BBAB39}Configs/Loadouts/USSR/Loadout_USSR_Sharpshooter.conf" {
+  }
+ }
+}

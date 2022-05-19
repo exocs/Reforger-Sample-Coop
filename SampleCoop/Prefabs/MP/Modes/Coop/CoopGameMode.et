@@ -1,0 +1,28 @@
+SCR_BaseGameMode : "{137CA336F7DFF561}Prefabs/MP/Modes/Coop/CoopGameMode_Base.et" {
+ ID "56B2B479C6B96951"
+ components {
+  SCR_RespawnTimerComponent "{5966E56D0FE64680}" {
+   m_fRespawnTime 2
+  }
+  SCR_RespawnBriefingComponent "{5966ECB28132C85E}" {
+   m_Info SCR_UIInfo "{5966ECB29AB5AA74}" {
+    Name "Sample Coop"
+    Description "A coop sample."
+   }
+   m_aGameModeHints {
+    SCR_UIInfo "{5966ECB2D190E82B}" {
+     Name "Hint Sample"
+     Description "Brief description."
+     Icon "{39A515BAE3795994}UI/Textures/DeployMenu/Briefing/conflict_HintBanner_3_UI.edds"
+    }
+   }
+   m_aWinConditions {
+    SCR_BriefingVictoryCondition "{5966ECB2E6856C12}" {
+     victoryCondition SEIZE
+     name "Condition"
+     description "Do something"
+    }
+   }
+  }
+ }
+}

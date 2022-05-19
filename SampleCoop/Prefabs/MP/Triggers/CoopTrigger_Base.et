@@ -1,0 +1,8 @@
+SCR_BaseTriggerEntity {
+ ID "5966F2A96DE950B4"
+ TriggerShapeType Sphere
+ SphereRadius 25
+ ShapeColor 0.318 0.561 0.071 1
+ TriggerActivationType "All changes"
+ PeriodicQueries 1
+}

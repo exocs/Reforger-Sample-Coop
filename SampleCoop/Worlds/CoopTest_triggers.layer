@@ -1,0 +1,48 @@
+$grp SCR_BaseTriggerEntity : "{3F294A5E2B52B65E}Prefabs/MP/Triggers/CoopTriggerSpawner.et" {
+ DynamicTriggerSpawn1 {
+  components {
+   SCR_AISpawnerComponent "{5966F2A840D93A01}" {
+    m_vSpawnPosition 200.193 10 242.115
+    m_vSpawnRotation 0 87 0
+   }
+  }
+  coords 241.346 10.001 243.255
+  SphereRadius 2
+  DrawShape 1
+ }
+ DynamicTriggerSpawn2 {
+  components {
+   SCR_AISpawnerComponent "{5966F2A840D93A01}" {
+    m_rnDefaultPrefab "{30ED11AA4F0D41E5}Prefabs/Groups/OPFOR/Group_USSR_FireGroup.et"
+    m_vSpawnPosition 207.415 10 269.989
+    m_vSpawnRotation 0 40 0
+   }
+  }
+  coords 241.75 10.001 264.307
+  SphereRadius 2
+  DrawShape 1
+  ShapeColor 0.157 0.624 0.624 1
+ }
+ DynamicTriggerSpawn3 {
+  components {
+   SCR_AISpawnerComponent "{5966F2A840D93A01}" {
+    m_vSpawnPosition 11.799 10 243.045
+    m_vSpawnRotation 0 87 0
+    m_aWaypointsList {
+     "WP3" "WP4"
+    }
+   }
+  }
+  coords 241.346 10.001 252.255
+  SphereRadius 2
+  DrawShape 1
+  ShapeColor 0.318 0.071 0.561 1
+ }
+}
+SCR_SpawnPoint SpawnPoint_US2 : "{CEA2B24051A44525}PrefabsEditable/SpawnPoints/E_SpawnPoint_US.et" {
+ coords 256 10 242.5
+ angleY -90
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+  Name "Armadillo"
+ }
+}

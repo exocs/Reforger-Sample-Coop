@@ -1,0 +1,15 @@
+SCR_BaseTriggerEntity : "{5BB84B3E6A0B46C5}Prefabs/MP/Triggers/CoopTrigger_Base.et" {
+ ID "5966F2A96DE950B4"
+ components {
+  SCR_AISpawnerComponent "{5966F2A840D93A01}" {
+   m_bUseTrigger 1
+   m_aWaypointsList {
+    "WP1" "WP2"
+   }
+  }
+  RplComponent "{5966F2A87A6B4E62}" {
+  }
+ }
+ SphereRadius 10
+ ClassFilter "ChimeraCharacter"
+}

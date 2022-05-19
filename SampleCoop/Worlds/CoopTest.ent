@@ -1,0 +1,18 @@
+Layer default {
+ Index 0
+}
+Layer managers {
+ Index 1
+}
+Layer gamemode {
+ Index 2
+}
+Layer environment {
+ Index 3
+}
+Layer triggers {
+ Index 4
+}
+Layer AI {
+ Index 5
+}

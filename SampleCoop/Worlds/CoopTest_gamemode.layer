@@ -1,0 +1,21 @@
+SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+}
+PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+}
+SCR_BaseGameMode GameMode : "{904EC091C347AEA9}Prefabs/MP/Modes/Coop/CoopGameMode.et" {
+ components {
+  SCR_RespawnMenuHandlerComponent "{5966E56DB0ABC25D}" {
+  }
+ }
+}
+SCR_FactionManager FactionManager : "{E4075339B4E24E10}Prefabs/MP/Managers/Factions/CoopFactionManager.et" {
+}
+SCR_LoadoutManager LoadoutManager : "{0C4D399744D5B3FD}Prefabs/MP/Managers/Loadouts/CoopLoadoutManager.et" {
+}
+SCR_SpawnPoint SpawnPoint_US : "{CEA2B24051A44525}PrefabsEditable/SpawnPoints/E_SpawnPoint_US.et" {
+ coords 256 10 264
+ angleY -90
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+  Name "Mustang"
+ }
+}

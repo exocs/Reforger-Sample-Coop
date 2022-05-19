@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{F9CAA9AD4CA12BC8}Prefabs/MP/Managers/CoopLoadoutManager_Base.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

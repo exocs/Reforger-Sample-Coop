@@ -1,0 +1,25 @@
+$grp SCR_AIWaypoint : "{750A8D1695BD6998}Prefabs/AI/Waypoints/AIWaypoint_Move.et" {
+ WP3 {
+  coords 24.115 10.001 250.042
+ }
+ WP4 {
+  coords 24.115 10.001 287.042
+ }
+ WP5 {
+  coords 67.615 10.001 195.042
+ }
+}
+$grp SCR_DefendWaypoint : "{93291E72AC23930F}Prefabs/AI/Waypoints/AIWaypoint_Defend.et" {
+ WP1 {
+  coords 190.218 10.001 207.565
+ }
+ WP2 {
+  coords 190.218 10.001 309.065
+ }
+}
+SCR_AIGroup StaticGroup : "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et" {
+ coords 85.159 10.001 178.148
+ m_aStaticWaypoints {
+  "WP4" "WP5" "WP1"
+ }
+}

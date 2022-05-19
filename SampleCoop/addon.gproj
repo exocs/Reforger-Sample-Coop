@@ -1,0 +1,8 @@
+GameProject {
+ ID "SampleCoop"
+ GUID "5966E5428E081A6C"
+ TITLE "SampleCoop"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}

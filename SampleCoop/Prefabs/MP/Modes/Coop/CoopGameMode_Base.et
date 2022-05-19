@@ -1,0 +1,9 @@
+SCR_BaseGameMode : "{0F307326459A1395}Prefabs/MP/Modes/GameMode_Base.et" {
+ ID "56B2B479C6B96951"
+ components {
+  SCR_RespawnBriefingComponent "{5966ECB28132C85E}" {
+   m_Info SCR_UIInfo "{5966ECB29AB5AA74}" {
+   }
+  }
+ }
+}

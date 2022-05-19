@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{3F294A5E2B52B65E}Prefabs/MP/Triggers/CoopTriggerSpawner.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
