@@ -1,5 +1,6 @@
 # Sample Coop Addon
 This addon is a very early and simple overlook of setting up a coop-based addon for Arma Reforger.
+![Preview Image](https://github.com/exocs/Reforger-Sample-Coop/blob/main/PreviewImage.jpg?raw=true)
 
 ## Content
 - Simple test world *(with mission header)*
