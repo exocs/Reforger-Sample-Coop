@@ -1,4 +1,4 @@
-[EntityEditorProps(category: "GameScripted/Coop", description: "Allows spawning of AI groups.")]
+[ComponentEditorProps(category: "GameScripted/Coop", description: "Allows spawning of AI groups.")]
 class SCR_AISpawnerComponentClass : ScriptComponentClass
 {
 }
