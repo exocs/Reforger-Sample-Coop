@@ -50,4 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Enfusion Resource Database
 *.rdb
+
+# Subversion
+.svn/
