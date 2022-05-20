@@ -8,9 +8,10 @@ $grp SCR_BaseTriggerEntity : "{3F294A5E2B52B65E}Prefabs/MP/Triggers/CoopTriggerS
    RplComponent "{5966F2A87A6B4E62}" {
    }
   }
-  coords 241.346 10.001 243.255
+  coords 240 10 240
   SphereRadius 2
   DrawShape 1
+  ShapeColor 0.318 0.561 0.071 0.392
  }
  DynamicTriggerSpawn2 {
   components {
@@ -18,15 +19,37 @@ $grp SCR_BaseTriggerEntity : "{3F294A5E2B52B65E}Prefabs/MP/Triggers/CoopTriggerS
     m_rnDefaultPrefab "{30ED11AA4F0D41E5}Prefabs/Groups/OPFOR/Group_USSR_FireGroup.et"
     m_vSpawnPosition 207.415 10 269.989
     m_vSpawnRotation 0 40 0
-    m_bEndGameOnEmpty 1
    }
    RplComponent "{5966F2A87A6B4E62}" {
    }
   }
-  coords 241.75 10.001 264.307
+  coords 240 10 260
+  userScript "	protected SCR_AISpawnerComponent m_pSpawner;"
   SphereRadius 2
   DrawShape 1
-  ShapeColor 0.157 0.624 0.624 1
+  ShapeColor 0.157 0.624 0.624 0.392
+  EOnInit ""\
+  "		super.EOnInit(owner);"\
+  "		m_pSpawner = SCR_AISpawnerComponent.Cast(owner.FindComponent(SCR_AISpawnerComponent));"\
+  "		if (!m_pSpawner)"\
+  "			return;"\
+  "		"\
+  "		m_pSpawner.GetOnEmptyInvoker().Insert(OnTriggerEmpty);"\
+  "	}"\
+  "	"\
+  "	protected void OnTriggerEmpty()"\
+  "	{"\
+  "		// Unhook from the spawner"\
+  "		m_pSpawner.GetOnEmptyInvoker().Remove(OnTriggerEmpty);"\
+  "		"\
+  "		SCR_BaseGameMode gm = SCR_BaseGameMode.Cast(GetGame().GetGameMode());"\
+  "		if (!gm.IsMaster())"\
+  "			return;"\
+  "			"\
+  "		Faction faction = GetGame().GetFactionManager().GetFactionByKey(\"US\");"\
+  "		int factionIdx = GetGame().GetFactionManager().GetFactionIndex(faction);"\
+  "		gm.EndGameMode(SCR_GameModeEndData.CreateSimple(SCR_GameModeEndData.ENDREASON_EDITOR_FACTION_VICTORY, -1, factionIdx));"\
+  "	"
  }
  DynamicTriggerSpawn3 {
   components {
@@ -40,15 +63,15 @@ $grp SCR_BaseTriggerEntity : "{3F294A5E2B52B65E}Prefabs/MP/Triggers/CoopTriggerS
    RplComponent "{5966F2A87A6B4E62}" {
    }
   }
-  coords 241.346 10.001 252.255
+  coords 240 10 250
   SphereRadius 2
   DrawShape 1
-  ShapeColor 0.318 0.071 0.561 1
+  ShapeColor 0.318 0.071 0.561 0.392
  }
 }
 SCR_SpawnPoint SpawnPoint_US2 : "{CEA2B24051A44525}PrefabsEditable/SpawnPoints/E_SpawnPoint_US.et" {
- coords 256 10 242.5
- angleY -90
+ coords 257.5 10 235.474
+ angleY -60
  m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
   Name "Armadillo"
  }

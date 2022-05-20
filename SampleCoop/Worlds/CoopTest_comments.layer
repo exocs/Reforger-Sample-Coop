@@ -1,7 +1,6 @@
 $grp CommentEntity {
  Comment3 {
-  coords 241.728 13.842 264.401
-  angleY -90
+  coords 240 13.5 260
   m_Comment "WALK THROUGH TO SPAWN GROUP"
   m_Size 0.5
   m_Color 0.071 0.561 0.561
@@ -10,8 +9,7 @@ $grp CommentEntity {
   m_VisibleIngame 1
  }
  Comment3B {
-  coords 241.728 13.342 264.401
-  angleY -90
+  coords 240 13 260
   m_Comment "ELIMINATING ENDS THE GAME"
   m_Size 0.5
   m_Color 0.033 0.235 0.235
@@ -20,8 +18,7 @@ $grp CommentEntity {
   m_VisibleIngame 1
  }
  Comment2 {
-  coords 241.728 13.842 252.401
-  angleY -90
+  coords 240 13.5 250
   m_Comment "WALK THROUGH TO SPAWN GROUP"
   m_Size 0.5
   m_Color 0.318 0.071 0.561
@@ -30,11 +27,38 @@ $grp CommentEntity {
   m_VisibleIngame 1
  }
  Comment1 {
-  coords 241.728 13.842 243.401
-  angleY -90
+  coords 240 13.5 240
   m_Comment "WALK THROUGH TO SPAWN GROUP"
   m_Size 0.5
-  m_Color 0.157 0.624 0.275
+  m_Color 0.251 0.502 0
+  m_FaceCamera 1
+  m_VisibleOverall 1
+  m_VisibleIngame 1
+ }
+ Comment4 {
+  coords 263 13.5 270
+  m_Comment "MOVE TO (TASK)"
+  m_Size 0.5
+  m_Color 0.502 0 0
+  m_FaceCamera 1
+  m_VisibleOverall 1
+  m_VisibleIngame 1
+ }
+ Comment5 {
+  coords 240 13.5 270
+  m_Comment "ELIMINATE"
+  m_Size 0.5
+  m_Color 0.502 0.376 0
+  m_FaceCamera 1
+  m_VisibleOverall 1
+  m_VisibleIngame 1
+ }
+ Comment6 {
+  coords 255.5 13 270
+  angleY -90
+  m_Comment "EXPLOSIVES INSIDE"
+  m_Size 0.5
+  m_Color 0.502 0.376 0
   m_FaceCamera 1
   m_VisibleOverall 1
   m_VisibleIngame 1

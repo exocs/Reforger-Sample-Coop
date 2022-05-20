@@ -1,0 +1,244 @@
+SCR_CoopTaskManager {
+ ID "596895DD33F6FAE1"
+ components {
+  SCR_TextsTaskManagerComponent "{596895DD3C75D39A}" {
+   m_aEntries {
+    SCR_TextsTaskManagerEntry "{596895DD3C75CDC2}" {
+     m_TextType CUSTOM
+     m_aTexts {
+      SCR_UIDescription "{596895DD3C75CDB8}" {
+       Name "#AR-Editor_CustomTask_1_Name"
+       Description "#AR-Editor_CustomTask_1_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CDAE}" {
+       Name "#AR-Editor_CustomTask_2_Name"
+       Description "#AR-Editor_CustomTask_2_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CDA8}" {
+       Name "#AR-Editor_CustomTask_3_Name"
+       Description "#AR-Editor_CustomTask_3_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CDA2}" {
+       Name "#AR-Editor_CustomTask_4_Name"
+       Description "#AR-Editor_CustomTask_4_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CD9B}" {
+       Name "#AR-Editor_CustomTask_5_Name"
+       Description "#AR-Editor_CustomTask_5_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CD95}" {
+       Name "#AR-Editor_CustomTask_6_Name"
+       Description "#AR-Editor_CustomTask_6_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CD8F}" {
+       Name "#AR-Editor_CustomTask_7_Name"
+       Description "#AR-Editor_CustomTask_7_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CD8A}" {
+       Name "#AR-Editor_CustomTask_8_Name"
+       Description "#AR-Editor_CustomTask_8_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CD85}" {
+       Name "#AR-Editor_CustomTask_9_Name"
+       Description "#AR-Editor_CustomTask_9_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CD80}" {
+       Name "#AR-Editor_CustomTask_10_Name"
+       Description "#AR-Editor_CustomTask_10_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CDF9}" {
+       Name "#AR-Editor_CustomTask_11_Name"
+       Description "#AR-Editor_CustomTask_11_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CDF2}" {
+       Name "#AR-Editor_CustomTask_12_Name"
+       Description "#AR-Editor_CustomTask_12_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CDEC}" {
+       Name "#AR-Editor_CustomTask_13_Name"
+       Description "#AR-Editor_CustomTask_13_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CDE6}" {
+       Name "#AR-Editor_CustomTask_14_Name"
+       Description "#AR-Editor_CustomTask_14_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CDE3}" {
+       Name "#AR-Editor_CustomTask_15_Name"
+       Description "#AR-Editor_CustomTask_15_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CDDE}" {
+       Name "#AR-Editor_CustomTask_16_Name"
+       Description "#AR-Editor_CustomTask_16_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CDD9}" {
+       Name "#AR-Editor_CustomTask_17_Name"
+       Description "#AR-Editor_CustomTask_17_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CDD4}" {
+       Name "#AR-Editor_CustomTask_18_Name"
+       Description "#AR-Editor_CustomTask_18_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CDCC}" {
+       Name "#AR-Editor_CustomTask_19_Name"
+       Description "#AR-Editor_CustomTask_19_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CDC7}" {
+       Name "#AR-Editor_CustomTask_20_Name"
+       Description "#AR-Editor_CustomTask_20_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CDC3}" {
+       Name "#AR-Editor_CustomTask_21_Name"
+       Description "#AR-Editor_CustomTask_21_Description"
+      }
+     }
+    }
+    SCR_TextsTaskManagerEntry "{596895DD3C75D37D}" {
+     m_TextType MOVE
+     m_aTexts {
+      SCR_UIDescription "{596895DD3C75CC32}" {
+       Name "#AR-Editor_MoveTask_1_Name"
+       Description "#AR-Editor_MoveTask_1_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CC2C}" {
+       Name "#AR-Editor_MoveTask_2_Name"
+       Description "#AR-Editor_MoveTask_2_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CC27}" {
+       Name "#AR-Editor_MoveTask_3_Name"
+       Description "#AR-Editor_MoveTask_3_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CC21}" {
+       Name "#AR-Editor_MoveTask_4_Name"
+       Description "#AR-Editor_MoveTask_4_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CC1D}" {
+       Name "#AR-Editor_MoveTask_5_Name"
+       Description "#AR-Editor_MoveTask_5_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CC18}" {
+       Name "#AR-Editor_MoveTask_6_Name"
+       Description "#AR-Editor_MoveTask_6_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CC13}" {
+       Name "#AR-Editor_MoveTask_7_Name"
+       Description "#AR-Editor_MoveTask_7_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CC0D}" {
+       Name "#AR-Editor_MoveTask_8_Name"
+       Description "#AR-Editor_MoveTask_8_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CC09}" {
+       Name "#AR-Editor_MoveTask_9_Name"
+       Description "#AR-Editor_MoveTask_9_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CC05}" {
+       Name "#AR-Editor_MoveTask_10_Name"
+       Description "#AR-Editor_MoveTask_10_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CC7F}" {
+       Name "#AR-Editor_MoveTask_11_Name"
+       Description "#AR-Editor_MoveTask_11_Description"
+      }
+      SCR_UIDescription "{596895DD3C75CC7A}" {
+       Name "#AR-Editor_MoveTask_12_Name"
+       Description "#AR-Editor_MoveTask_12_Description"
+      }
+     }
+    }
+    SCR_TextsTaskManagerEntry "{596895DD3C75D34A}" {
+     m_TextType DEFEND
+     m_aTexts {
+      SCR_UIDescription "{596895DD3C75D368}" {
+       Name "#AR-Editor_DefendTask_0_Name"
+       Description "#AR-Editor_DefendTask_0_Description"
+      }
+      SCR_UIDescription "{596895DD3C75D36E}" {
+       Name "#AR-Editor_DefendTask_1_Name"
+       Description "#AR-Editor_DefendTask_1_Description"
+      }
+      SCR_UIDescription "{596895DD3C75D362}" {
+       Name "#AR-Editor_DefendTask_2_Name"
+       Description "#AR-Editor_DefendTask_2_Description"
+      }
+      SCR_UIDescription "{596895DD3C75D367}" {
+       Name "#AR-Editor_DefendTask_3_Name"
+       Description "#AR-Editor_DefendTask_3_Description"
+      }
+      SCR_UIDescription "{596895DD3C75D35B}" {
+       Name "#AR-Editor_DefendTask_4_Name"
+       Description "#AR-Editor_DefendTask_4_Description"
+      }
+      SCR_UIDescription "{596895DD3C75D35F}" {
+       Name "#AR-Editor_DefendTask_5_Name"
+       Description "#AR-Editor_DefendTask_5_Description"
+      }
+      SCR_UIDescription "{596895DD3C75D354}" {
+       Name "#AR-Editor_DefendTask_6_Name"
+       Description "#AR-Editor_DefendTask_6_Description"
+      }
+      SCR_UIDescription "{596895DD3C75D349}" {
+       Name "#AR-Editor_DefendTask_7_Name"
+       Description "#AR-Editor_DefendTask_7_Description"
+      }
+     }
+    }
+    SCR_TextsTaskManagerEntry "{596895DD3C75D3AF}" {
+     m_TextType ATTACK
+     m_aTexts {
+      SCR_UIDescription "{596895DD3C75D342}" {
+       Name "#AR-Editor_AttackTask_0_Name"
+       Description "#AR-Editor_AttackTask_0_Description"
+      }
+      SCR_UIDescription "{596895DD3C75D347}" {
+       Name "#AR-Editor_AttackTask_2_Name"
+       Description "#AR-Editor_AttackTask_2_Description"
+      }
+      SCR_UIDescription "{596895DD3C75D3BB}" {
+       Name "#AR-Editor_AttackTask_1_Name"
+       Description "#AR-Editor_AttackTask_1_Description"
+      }
+      SCR_UIDescription "{596895DD3C75D3BF}" {
+       Name "#AR-Editor_AttackTask_3_Name"
+       Description "#AR-Editor_AttackTask_3_Description"
+      }
+      SCR_UIDescription "{596895DD3C75D3B5}" {
+       Name "#AR-Editor_AttackTask_4_Name"
+       Description "#AR-Editor_AttackTask_4_Description"
+      }
+      SCR_UIDescription "{596895DD3C75D3AA}" {
+       Name "#AR-Editor_AttackTask_5_Name"
+       Description "#AR-Editor_AttackTask_5_Description"
+      }
+      SCR_UIDescription "{596895DD3C75D3AE}" {
+       Name "#AR-Editor_AttackTask_6_Name"
+       Description "#AR-Editor_AttackTask_6_Description"
+      }
+     }
+    }
+   }
+  }
+  SCR_UITaskManagerComponent "{596895DD3C75D39D}" {
+  }
+  RplComponent "{596895DD3C75D393}" {
+   Streamable Disabled
+  }
+ }
+ coords 226.307 10.001 247.351
+ m_aSupportedTaskTypes {
+  SCR_BaseTaskSupportClass "{596895DD3C75D384}" {
+   m_TaskPrefab "{1D0F815858EE24AC}Prefabs/Tasks/BaseTask.et"
+  }
+  SCR_CampaignTaskSupportClass "{596895DD3C75D3FA}" {
+   m_TaskPrefab "{A7E92298A3F916F7}Prefabs/Tasks/CampaignTask.et"
+  }
+  SCR_MoveTaskSupportClass "{596895DD3C75D3FE}" {
+  }
+  SCR_EditorTaskSupportClass "{596895DD3C75D3F2}" {
+  }
+  SCR_TriggerTaskSupportClass "{596895DD3C75D3E8}" {
+  }
+  SCR_CampaignBuildingTaskSupportClass "{596895DD3C75D3ED}" {
+   m_TaskPrefab "{7F722BBED971DCDC}Prefabs/Tasks/CampaignBuildingTask.et"
+  }
+ }
+}
