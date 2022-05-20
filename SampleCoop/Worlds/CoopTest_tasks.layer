@@ -32,7 +32,7 @@ $grp SCR_EliminateTask : "{B866318EB7E84833}Prefabs/Tasks/EliminateTask.et" {
  EliminateTaskB {
   coords 86.897 10.001 176.849
  }
- EliminateTask {
+ EliminateTaskA {
   coords 239.915 10.001 270.184
   m_sName "Eliminate UAZ"
  }

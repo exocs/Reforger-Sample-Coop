@@ -20,9 +20,34 @@ RadioManagerEntity RadioManager : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.
 ScriptedChatEntity ChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
  coords 9.341 0 6.234
 }
+GenericEntity CoopLogic {
+ coords 265.941 10.001 268.581
+ userScript "	// code here"
+ constructor ""\
+ "		SetEventMask(EntityEvent.INIT);"\
+ "	"
+ EOnInit ""\
+ "		SCR_EliminateTask task = SCR_EliminateTask.Cast(GetWorld().FindEntityByName(\"EliminateTaskA\"));"\
+ "		if (task)"\
+ "		{"\
+ "			task.GetOnEliminatedInvoker().Insert(OnTaskComplete);"\
+ "		}"\
+ "	}"\
+ "	"\
+ "	void OnTaskComplete(SCR_BaseTask task) "\
+ "	{"\
+ "		SCR_BaseGameMode gameMode = SCR_BaseGameMode.Cast(GetGame().GetGameMode());"\
+ "		if (!gameMode || !gameMode.IsMaster())"\
+ "			return;"\
+ "		"\
+ "		Faction faction = task.GetTargetFaction();"\
+ "		int factionIndex = GetGame().GetFactionManager().GetFactionIndex(faction);"\
+ "        gameMode.EndGameMode(SCR_GameModeEndData.CreateSimple(SCR_GameModeEndData.ENDREASON_EDITOR_FACTION_VICTORY, -1, factionIndex));"\
+ "	"
+}
 SCR_MPDestructionManager DestructionManager : "{9BB369F2803C6F71}Prefabs/MP/MPDestructionManager.et" {
 }
-SCR_CoopTaskManager TaskManager : "{BA79FF1D825A3F3A}Prefabs/MP/Managers/Tasks/CoopTaskManager.et" {
+SCR_CoopTaskManager CoopTaskManager : "{BA79FF1D825A3F3A}Prefabs/MP/Managers/Tasks/CoopTaskManager.et" {
  coords 229.281 10.001 247.172
  m_aSupportedTaskTypes {
   SCR_EliminateTaskSupportClass "{5968C9C362B1A0E9}" {
@@ -30,6 +55,6 @@ SCR_CoopTaskManager TaskManager : "{BA79FF1D825A3F3A}Prefabs/MP/Managers/Tasks/C
   }
  }
  m_aInitialTaskNames {
-  "MoveTask_1" "EliminateTask" "EliminateTaskB"
+  "MoveTask_1" "EliminateTaskA" "EliminateTaskB"
  }
 }

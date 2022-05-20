@@ -4,6 +4,10 @@ class SCR_EliminateTaskClass: SCR_BaseTaskClass
 {
 };
 
+void OnEliminatedDelegate(SCR_BaseTask task);
+typedef func OnEliminatedDelegate;
+typedef ScriptInvokerBase<OnEliminatedDelegate> OnEliminatedInvoker;
+
 //------------------------------------------------------------------------------------------------
 class SCR_EliminateTask : SCR_BaseTask
 {
@@ -12,6 +16,14 @@ class SCR_EliminateTask : SCR_BaseTask
 	
 	protected RplId m_TargetEntityRplID;
 	protected IEntity m_TargetEntity;
+	
+	protected ref OnEliminatedInvoker m_pOnEliminatedInvoker = new OnEliminatedInvoker();	
+	
+	//------------------------------------------------------------------------------------------------
+	OnEliminatedInvoker GetOnEliminatedInvoker()
+	{
+		return m_pOnEliminatedInvoker;
+	}
 
 	//------------------------------------------------------------------------------------------------
 	RplId GetTargetEntityRplID()
@@ -23,6 +35,7 @@ class SCR_EliminateTask : SCR_BaseTask
 	override void Finish(bool showMsg = true)
 	{
 		super.Finish(showMsg);
+		m_pOnEliminatedInvoker.Invoke(this);
 		
 		if (!showMsg)
 			return;
