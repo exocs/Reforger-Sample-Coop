@@ -1,2 +1,16 @@
 GenericTerrainEntity CoopTestTerrain {
 }
+GenericEntity Bunker : "{2D60BA8C416641F9}PrefabsEditable/Auto/Props/Military/Sandbags/E_Sandbag_01_bunker_plastic.et" {
+ coords 255.5 10 270
+ angleY -90
+ {
+  GenericEntity : "{7C93700E1AC4C388}Prefabs/Systems/Arsenal/AmmoBoxes/USSR/AmmoBoxArsenal_Launcher_USSR.et" {
+   coords 0.634 0.036 1.096
+   angleY -180
+  }
+  GenericEntity : "{C026AEDDA55DB43C}Prefabs/Systems/Arsenal/AmmoBoxes/US/AmmoBoxArsenal_Launcher_US.et" {
+   coords -0.573 0.043 1.045
+   angleY -180
+  }
+ }
+}

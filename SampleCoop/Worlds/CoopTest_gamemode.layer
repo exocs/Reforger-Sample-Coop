@@ -13,8 +13,8 @@ SCR_FactionManager FactionManager : "{E4075339B4E24E10}Prefabs/MP/Managers/Facti
 SCR_LoadoutManager LoadoutManager : "{0C4D399744D5B3FD}Prefabs/MP/Managers/Loadouts/CoopLoadoutManager.et" {
 }
 SCR_SpawnPoint SpawnPoint_US : "{CEA2B24051A44525}PrefabsEditable/SpawnPoints/E_SpawnPoint_US.et" {
- coords 256 10 264
- angleY -90
+ coords 263 9 245
+ angleY -60
  m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
   Name "Mustang"
  }

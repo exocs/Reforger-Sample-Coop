@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{BA79FF1D825A3F3A}Prefabs/MP/Managers/Tasks/CoopTaskManager.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

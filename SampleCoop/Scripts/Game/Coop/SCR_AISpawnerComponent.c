@@ -3,6 +3,11 @@ class SCR_AISpawnerComponentClass : ScriptComponentClass
 {
 }
 
+void ScriptInvoker_OnSpawnerEmptyDelegate();
+typedef func ScriptInvoker_OnSpawnerEmptyDelegate;
+typedef ScriptInvokerBase<ScriptInvoker_OnSpawnerEmptyDelegate> ScriptInvoker_OnSpawnerEmpty;
+
+
 //------------------------------------------------------------------------------------------------
 class SCR_AISpawnerComponent : ScriptComponent
 {
@@ -23,9 +28,6 @@ class SCR_AISpawnerComponent : ScriptComponent
 
 	[Attribute("", UIWidgets.Auto, "List of waypoints to use.")]
 	protected ref array<string> m_aWaypointsList;
-	
-	[Attribute("0", UIWidgets.CheckBox, "Ends game when all AIs die")]
-	protected bool m_bEndGameOnEmpty;
 
 	// Attached component.
 	protected RplComponent m_pRplComponent;
@@ -33,10 +35,19 @@ class SCR_AISpawnerComponent : ScriptComponent
 	//! Spawned agent relevant to the authority only.
 	protected AIAgent m_pSpawnedAgent;
 	
+	//! Invoker which we can hook onto - see typedef above
+	protected ref ScriptInvoker_OnSpawnerEmpty m_pOnEmptyInvoker = new ScriptInvoker_OnSpawnerEmpty();
+	
 	//------------------------------------------------------------------------------------------------
 	AIAgent GetSpawnedAgent()
 	{
 		return m_pSpawnedAgent;
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	ScriptInvoker_OnSpawnerEmpty GetOnEmptyInvoker()
+	{
+		return m_pOnEmptyInvoker;
 	}
 	
 	//------------------------------------------------------------------------------------------------
@@ -135,25 +146,15 @@ class SCR_AISpawnerComponent : ScriptComponent
 
 		SCR_AIGroup aiGroup = SCR_AIGroup.Cast(agent);
 		if (aiGroup)
-		{
 			aiGroup.GetOnEmpty().Insert(OnEmpty);
-		}
 		
 		return true;
 	}
 	
 	//------------------------------------------------------------------------------------------------
-	protected void OnEmpty()
+	protected event void OnEmpty()
 	{
-		// TODO@LITERALLYANYONE: REMOVE T... no, just kidding
-		// TODO@EX0: Move the victory condition out of of the spawner :)
-		if (!m_bEndGameOnEmpty)
-			return;
-		
-		SCR_BaseGameMode gameMode = SCR_BaseGameMode.Cast(GetGame().GetGameMode());
-		Faction faction = GetGame().GetFactionManager().GetFactionByKey("US");
-		int usIndex = GetGame().GetFactionManager().GetFactionIndex(faction);
-		gameMode.EndGameMode(SCR_GameModeEndData.CreateSimple(SCR_GameModeEndData.ENDREASON_EDITOR_FACTION_VICTORY, -1, usIndex));
+		m_pOnEmptyInvoker.Invoke();
 	}
 
 	//------------------------------------------------------------------------------------------------

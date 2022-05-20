@@ -1,0 +1,13 @@
+SCR_EliminateTask {
+ ID "5968C9C59E99B6FD"
+ components {
+  SCR_MapDescriptorComponent "{5968F2D8BCB9F064}" {
+   ImagesetQuadElement "Task_Seize"
+   MainType Tree
+  }
+ }
+ coords 256.688 10.372 273.955
+ m_sName "Eliminate target"
+ m_bNotifyAssignment 1
+ m_bNotifyUnassign 1
+}

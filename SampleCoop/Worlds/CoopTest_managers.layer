@@ -22,3 +22,14 @@ ScriptedChatEntity ChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity
 }
 SCR_MPDestructionManager DestructionManager : "{9BB369F2803C6F71}Prefabs/MP/MPDestructionManager.et" {
 }
+SCR_CoopTaskManager TaskManager : "{BA79FF1D825A3F3A}Prefabs/MP/Managers/Tasks/CoopTaskManager.et" {
+ coords 229.281 10.001 247.172
+ m_aSupportedTaskTypes {
+  SCR_EliminateTaskSupportClass "{5968C9C362B1A0E9}" {
+   m_TaskPrefab "{B866318EB7E84833}Prefabs/Tasks/EliminateTask.et"
+  }
+ }
+ m_aInitialTaskNames {
+  "MoveTask_1" "EliminateTask" "EliminateTaskB"
+ }
+}
