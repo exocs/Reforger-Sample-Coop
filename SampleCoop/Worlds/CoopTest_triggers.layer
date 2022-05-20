@@ -5,6 +5,8 @@ $grp SCR_BaseTriggerEntity : "{3F294A5E2B52B65E}Prefabs/MP/Triggers/CoopTriggerS
     m_vSpawnPosition 200.193 10 242.115
     m_vSpawnRotation 0 87 0
    }
+   RplComponent "{5966F2A87A6B4E62}" {
+   }
   }
   coords 241.346 10.001 243.255
   SphereRadius 2
@@ -16,6 +18,9 @@ $grp SCR_BaseTriggerEntity : "{3F294A5E2B52B65E}Prefabs/MP/Triggers/CoopTriggerS
     m_rnDefaultPrefab "{30ED11AA4F0D41E5}Prefabs/Groups/OPFOR/Group_USSR_FireGroup.et"
     m_vSpawnPosition 207.415 10 269.989
     m_vSpawnRotation 0 40 0
+    m_bEndGameOnEmpty 1
+   }
+   RplComponent "{5966F2A87A6B4E62}" {
    }
   }
   coords 241.75 10.001 264.307
@@ -31,6 +36,8 @@ $grp SCR_BaseTriggerEntity : "{3F294A5E2B52B65E}Prefabs/MP/Triggers/CoopTriggerS
     m_aWaypointsList {
      "WP3" "WP4"
     }
+   }
+   RplComponent "{5966F2A87A6B4E62}" {
    }
   }
   coords 241.346 10.001 252.255
