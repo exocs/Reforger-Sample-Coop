@@ -20,3 +20,8 @@ This addon is a very early and simple overlook of setting up a coop-based addon 
 The solution inside is far from perfect, it should rather serve as an initial example of how to set up game modes to allow for other game modes than Conflict and Capture & Hold and should give you some insight in how you can approach some of the challenges.
 
 If you encounter any problems, please let me know on the [Arma discord](http://discord.gg/arma).
+
+## Legal
+© 2022 BOHEMIA INTERACTIVE a.s. ARMA REFORGER®, ENFUSION®, and BOHEMIA INTERACTIVE® are registered trademarks of BOHEMIA INTERACTIVE a.s. All rights reserved.
+See https://community.bistudio.com/wiki/Category:Arma_Reforger for more information
+License: https://www.bohemia.net/community/licenses/arma-public-license
