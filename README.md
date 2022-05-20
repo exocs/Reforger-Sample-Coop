@@ -7,21 +7,25 @@ This addon is a very early and simple overlook of setting up a coop-based addon 
 - Basic prefab setup *(with proper inheritance)*
 - AI groups spawning *(static and dynamic)*
 - AI waypoints *(static and dynamic)*
+- Tasks usage *(custom scripted eliminate task)*
 - Simple win condition *(a rather naïve one*)
 
 ## Running the addon
-- Clone the repo somewhere on your storage
+- Clone the repository on your local storage
 - Start the Enfusion Workbench
-- Click on add existing
-- Navigate the browser to Reforger-Sample-Coop/SampleCoop/addon.gproj
-- Select Sample Coop and click Open
+- Select "Add Existing"
+- Navigate the file browser to "Reforger-Sample-Coop/SampleCoop/addon.gproj"
+- Select "Sample Coop" and select "Open"
 
 ## Disclaimer
 The solution inside is far from perfect, it should rather serve as an initial example of how to set up game modes to allow for other game modes than Conflict and Capture & Hold and should give you some insight in how you can approach some of the challenges.
 
 If you encounter any problems, please let me know on the [Arma discord](http://discord.gg/arma).
 
+## Known issues
+- Tasks can sometimes show as "THIS SHOULDNT BE VISIBLE" for remote clients.
+
 ## Legal
-© 2022 BOHEMIA INTERACTIVE a.s. ARMA REFORGER®, ENFUSION®, and BOHEMIA INTERACTIVE® are registered trademarks of BOHEMIA INTERACTIVE a.s. All rights reserved.
-See https://community.bistudio.com/wiki/Category:Arma_Reforger for more information
+© 2022 BOHEMIA INTERACTIVE a.s. ARMA REFORGER®, ENFUSION®, and BOHEMIA INTERACTIVE® are registered trademarks of BOHEMIA INTERACTIVE a.s. All rights reserved.  
+See https://community.bistudio.com/wiki/Category:Arma_Reforger for more information.  
 License: https://www.bohemia.net/community/licenses/arma-public-license
