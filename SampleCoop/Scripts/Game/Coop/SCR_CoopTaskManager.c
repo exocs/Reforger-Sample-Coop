@@ -103,29 +103,22 @@ class SCR_CoopTaskManager : SCR_BaseTaskManager
 			return;
 		}
 		
-		SCR_BaseTask task = m_aInitialTasks.GetRandomElement();
-		if (!task)
-			continue;
+		/*
 		
-		// Skip already finished tasks
-		if (task.GetTaskState() == SCR_TaskState.FINISHED)
-			continue;
-
-		// Assign task
-		AssignTask(task, taskExecutor, false);
-
-		//Example
-		/*foreach (SCR_BaseTask task : m_aInitialTasks)
-		{
+			If you would want to assign a specific task when player connects,
+			you could try doing something like this:
+		
+			SCR_BaseTask task = m_aInitialTasks.GetRandomElement();
 			if (!task)
-				continue;
-
+				return;
+			
 			// Skip already finished tasks
 			if (task.GetTaskState() == SCR_TaskState.FINISHED)
-				continue;
-
+				return;
+	
 			// Assign task
 			AssignTask(task, taskExecutor, false);
-		}*/
+		
+		*/
 	}
 }
