@@ -145,6 +145,11 @@ class SCR_AISpawnerComponent : ScriptComponent
 	//------------------------------------------------------------------------------------------------
 	protected void OnEmpty()
 	{
+		// TODO@LITERALLYANYONE: REMOVE T... no, just kidding
+		// TODO@EX0: Move the victory condition out of of the spawner :)
+		if (!m_bEndGameOnEmpty)
+			return;
+		
 		SCR_BaseGameMode gameMode = SCR_BaseGameMode.Cast(GetGame().GetGameMode());
 		Faction faction = GetGame().GetFactionManager().GetFactionByKey("US");
 		int usIndex = GetGame().GetFactionManager().GetFactionIndex(faction);
